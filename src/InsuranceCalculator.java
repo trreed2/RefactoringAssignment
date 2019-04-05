@@ -9,7 +9,8 @@ public class InsuranceCalculator {
             strategy = new InsuranceStrategyLow();
             return strategy.calculateInsuranceVeryHigh(income);
         } else if (income <= 30000) {
-            return (income-10000)*0.2+35600;
+            strategy = new InsuranceStrategyMedium();
+            return strategy.calculateInsuranceVeryHigh(income);
         } else if (income <= 60000) {
             return (income-30000)*0.1+76500;
         } else {
