@@ -13,7 +13,11 @@ public class InsuranceCalculator {
     }
 
     public double calculateInsuranceVeryHigh(double income) {
-        return (income- getAdjustment())* getWeight() +105600;
+        return (income- getAdjustment())* getWeight() + getConstant();
+    }
+
+    public int getConstant() {
+        return 105600;
     }
 
     public double getWeight() {
