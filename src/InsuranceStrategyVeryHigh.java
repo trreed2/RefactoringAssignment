@@ -4,10 +4,9 @@ public abstract class InsuranceStrategy {
         return (income - getAdjustment()) * getWeight() + getConstant();
     }
 
-    public abstract int getConstant()
+    public abstract int getConstant();
 
-    public abstract double getWeight()
+    public abstract double getWeight();
 
-    public abstract int getAdjustment()
-
+    public abstract int getAdjustment();
 }
