@@ -1,6 +1,6 @@
 public class InsuranceCalculator {
 
-    private final InsuranceStrategyVeryHigh strategy = new InsuranceStrategyVeryHigh();
+    private InsuranceStrategyVeryHigh strategy = new InsuranceStrategyVeryHigh();
 
     public double calculateInsurance(double income) {
         if (income <= 10000) {
